@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_280PX"
+    android:orientation="horizontal" 
+    android:padding="@dimen/DIMEN_10PX">
+
+    <ImageView
+        android:id="@+id/id_mian_item_image"
+        android:layout_width="@dimen/DIMEN_220PX"
+        android:layout_height="@dimen/DIMEN_120PX"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" 
+        android:paddingLeft="@dimen/DIMEN_30PX"
+        >
+
+        <TextView
+            android:id="@+id/id_main_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:text="JAVA专题" />
+        
+        <TextView 
+            android:id="@+id/id_main_item_videonum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="300"
+            android:textColor="#aaaaaa"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="14sp"
+            />
+        
+         <TextView 
+            android:id="@+id/id_main_item_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="320MB"
+            android:layout_alignParentBottom="true"
+            android:textColor="#aaaaaa"
+            android:layout_toRightOf="@id/id_main_item_videonum"
+            android:layout_marginLeft="@dimen/DIMEN_120PX"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

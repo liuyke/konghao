@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/id_main_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_120PX"
+        layout="@layout/title_view" />
+
+    <ScrollView
+        android:id="@+id/id_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <org.liuyk.konghao.app.widget.ImageCycleView
+                android:id="@+id/id_main_imagecycleview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </org.liuyk.konghao.app.widget.ImageCycleView>
+<!-- 
+            <org.liuyk.konghao.app.widget.HorizontalListView
+                android:id="@+id/id_main_horizontallistview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DIMEN_450PX" >
+            </org.liuyk.konghao.app.widget.HorizontalListView>
+ -->
+            <org.liuyk.konghao.app.widget.ScrollInListView
+                android:id="@+id/id_main_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

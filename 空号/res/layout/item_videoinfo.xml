@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/DIMEN_10PX" >
+
+    <TextView
+        android:id="@+id/id_video_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="shiro的基础_授权的完整流程和实现"
+        android:textSize="16sp"
+        android:textColor="#111111" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_video_name"
+        android:layout_marginTop="@dimen/DIMEN_10PX"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/id_access_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="访问：11次" />
+
+        <TextView
+            android:id="@+id/id_size"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="大小：33M" />
+
+        <TextView
+            android:id="@+id/id_update_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="时间：2015-11-22" />
+    </LinearLayout>
+
+</RelativeLayout>
